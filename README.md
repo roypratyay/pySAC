@@ -14,7 +14,7 @@ Before running the script, ensure you have the following installed:
 
 - Python 3.x
 - `obspy` library
-- Access to a CSV file containing seismic event data
+- Access to a jan76_dec20.csv file containing seismic event data
 
 You can install the required libraries using pip:
 
@@ -22,9 +22,9 @@ You can install the required libraries using pip:
 pip install obspy
 ```
 
-### CSV File Format
+###  Global Centroid-Moment-Tensor (CMT) Catalog File
 
-The CSV file should contain the following columns in the specified order:
+The jan76_dec20.csv is a small version of Global Centroid-Moment-Tensor (CMT) catalog file and contains the following columns in the specified order:
 
 1. Event ID
 2. Year
@@ -42,10 +42,10 @@ The CSV file should contain the following columns in the specified order:
 
 1. **Specify the Path to the CSV File:**
 
-   Replace the placeholder path in the script with the actual path to your CSV file:
+   Replace the placeholder path in the script with the actual path to your **jan76_dec20.csv** file:
 
    ```python
-   csv_file = "path/to/your/csv_file.csv"
+   csv_file = "path/to/your/jan76_dec20.csv"
    ```
 
 2. **Run the Script:**
@@ -114,7 +114,3 @@ Contributions are welcome. Please open an issue or submit a pull request for any
 ### Acknowledgements
 
 This script uses the `obspy` library, which is an open-source project for processing seismological data. Thank you to the developers and contributors of `obspy`!
-
----
-
-This README provides an overview of the script, instructions for usage, and other relevant information for users and contributors. Feel free to customize it further based on your specific needs.
