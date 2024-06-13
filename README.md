@@ -24,7 +24,7 @@ pip install obspy
 
 ###  Global Centroid-Moment-Tensor (CMT) Catalog File
 
-The jan76_dec20.csv is a small version of Global Centroid-Moment-Tensor (CMT) catalog file and contains the following columns in the specified order:
+The `jan76_dec20.csv` is a small version of Global Centroid-Moment-Tensor (CMT) catalog file and contains the following columns in the specified order:
 
 1. Event ID
 2. Year
@@ -42,7 +42,7 @@ The jan76_dec20.csv is a small version of Global Centroid-Moment-Tensor (CMT) ca
 
 1. **Specify the Path to the CSV File:**
 
-   Replace the placeholder path in the script with the actual path to your **jan76_dec20.csv** file:
+   Replace the placeholder path in the script with the actual path to your `**jan76_dec20.csv**` file:
 
    ```python
    csv_file = "path/to/your/jan76_dec20.csv"
