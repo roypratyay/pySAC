@@ -108,7 +108,7 @@ evdep = selected_event[5]
 
 # calculate phase arrival time
 dist0, az, baz = obspy.geodetics.base.gps2dist_azimuth(evlat, evlon, stla, stlo) # dist0 is in meters
-dist = obspy.geodetics.base.kilometers2degrees(dist0)
+dist = obspy.geodetics.base.kilometers2degrees(dist0/1000)
 arrivals = model.get_travel_times(source_depth_in_km=evdep, distance_in_degree=dist, phase_list=[f"{phase_name}"])
 
 if not arrivals:
